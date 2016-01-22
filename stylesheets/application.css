@@ -1,0 +1,64 @@
+/*
+Error: File to import not found or unreadable: bootstrap-sprockets.
+       Load paths:
+         Compass::SpriteImporter
+         /Users/bay/Projects/shortcut-developer/app/assets/stylesheets
+         /Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets
+        on line 3 of /Users/bay/Projects/shortcut-developer/app/assets/stylesheets/application.scss
+
+1: // Import bootstrap.
+2: @import "bootstrap-variables";
+3: @import "bootstrap-sprockets";
+4: @import "bootstrap-custom"; /* Import only selected elements; not entire bootstrap *\/
+5: @import "compass/css3/border-radius";
+6: @import "compass/css3/background-clip";
+7: @import "compass/css3/background-size";
+8: 
+
+Backtrace:
+/Users/bay/Projects/shortcut-developer/app/assets/stylesheets/application.scss:3
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/import_node.rb:45:in `import'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/tree/root_node.rb:20:in `render'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/engine.rb:278:in `render'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-1.0.3/bin/compass:44:in `call'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/bin/compass:23:in `load'
+/Users/bay/.rvm/gems/ruby-2.0.0-p598/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: bootstrap-sprockets.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/bay/Projects/shortcut-developer/app/assets/stylesheets\A          /Users/bay/.rvm/gems/ruby-2.0.0-p598/gems/compass-core-1.0.3/stylesheets\A         on line 3 of /Users/bay/Projects/shortcut-developer/app/assets/stylesheets/application.scss\A \A 1: // Import bootstrap.\A 2: @import \"bootstrap-variables\";\A 3: @import \"bootstrap-sprockets\";\A 4: @import \"bootstrap-custom\"; /* Import only selected elements; not entire bootstrap */\A 5: @import \"compass/css3/border-radius\";\A 6: @import \"compass/css3/background-clip\";\A 7: @import \"compass/css3/background-size\";\A 8: "; }
