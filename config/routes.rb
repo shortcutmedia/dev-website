@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
   root "docs_pages#show", docs_page: "overview"
-
   match "/documentation", to: "docs_pages#overview", via: 'get'
 
   get "/documentation/:docs_page" => "docs_pages#show"
+  get ":docs_page" => "docs_pages#show"
   
   
   
