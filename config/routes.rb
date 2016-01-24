@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   match "/documentation", to: "docs_pages#overview", via: 'get'
 
   get "/documentation/:docs_page" => "docs_pages#show"
+  
+  # TODO This is a temporary fix until we will have other directories than /documentation/
   get ":docs_page" => "docs_pages#show"
   
   
