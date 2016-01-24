@@ -8,9 +8,13 @@ This SDK provides the following features:
 
 There is also an [Android version of this SDK](https://github.com/shortcutmedia/shortcut-deeplink-sdk-android).
 
-## Requirements
+### Requirements
 
 The SDK works with any device running iOS6 and newer.
+
+### License
+This project is released under the MIT license. See included LICENSE.txt file for details.
+
 
 ## Installation
 
@@ -20,7 +24,7 @@ The SDK is packaged in a .framework file. To use it within your project follow t
 2. Unzip it and add the *ShortcutDeepLinkingSDK.framework*  file to your project, e.g. by dragging it into the Project Navigator of your project in Xcode.
 3. Within your project's **Build phases** make sure that the *ShortcutDeepLinkingSDK.framework* is added in the **Link binary with libraries** section. If you don't find it there, drag it from the Project Navigator to the list.
 
-## Prerequisites
+### Prerequisites
 
 To make use of this SDK you need the following:
 
@@ -29,7 +33,7 @@ To make use of this SDK you need the following:
 - An API key with auth token. Use the [Shortcut Manager](http://manager.shortcutmedia.com/users/api_keys) to create one. This is only needed if you intend to create Shortcuts to share from within your app.
 
 
-## Integration into your app
+## App Integration
 
 Make sure to import our SDK in all files where you use it:
 
@@ -126,5 +130,3 @@ The parameters `websiteURL` and `completionHandler` are mandatory. All other par
 There are also shorter alternative methods if you want to create a short link without any deep links (`-createShortLinkWithWebsiteURL:completionHandler:`) or a short link with just iOS deep links (`-createShortLinkWithTitle:websiteURL:iOSAppStoreURL:iOSDeepLinkURL:completionHandler:`).
 
 
-## License
-This project is released under the MIT license. See included LICENSE.txt file for details.
