@@ -1,5 +1,13 @@
+require 'uri'
+require 'redcarpet'
+
 module ApplicationHelper
-  require 'uri'
+  class HTMLwithPygments < Redcarpet::Render::HTML
+    def block_code(code, language)
+      Pygments.highlight(code, lexer:language)
+    end
+  end
+  
   # Return a title on a per-page basis.
   def title
     base_title = "Shortcut Developer"
@@ -35,7 +43,7 @@ module ApplicationHelper
       hard_wrap:       true, 
       link_attributes: { rel: 'nofollow' }
     }
-    renderer = CustomHtml.new(render_options)
+    renderer = HTML.new(render_options)
 
     extensions = {
       autolink:           true,
@@ -47,5 +55,4 @@ module ApplicationHelper
     }
     Redcarpet::Markdown.new(renderer, extensions).render(text).html_safe
   end
-
 end
