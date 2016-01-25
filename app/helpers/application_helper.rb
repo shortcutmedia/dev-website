@@ -1,10 +1,33 @@
 require 'uri'
 require 'redcarpet'
+require 'rouge'
+require 'rouge/plugins/redcarpet'
+
 
 module ApplicationHelper
-  class HTMLwithPygments < Redcarpet::Render::HTML
-    def block_code(code, language)
-      Pygments.highlight(code, lexer:language)
+  # create a custom renderer that allows highlighting of code blocks
+  # class HTMLwithPygments < Redcarpet::Render::HTML
+  #   def block_code(code, language)
+  #     Pygments.highlight(code, lexer: language)
+  #   end
+  # end
+  #
+  # class HTML < Redcarpet::Render::HTML
+  #   include Rouge::Plugins::Redcarpet # yep, that's it.
+  # end
+  #
+  # class RenderWithoutCode < Redcarpet::Render::HTML
+  #   def block_code(code, language)
+  #     nil
+  #   end
+  # end
+  
+  class HTML < Redcarpet::Render::HTML
+    include Rouge::Plugins::Redcarpet
+    def rouge_formatter(opts={})
+      opts ={
+      }
+      Rouge::Formatters::HTML.new(opts)
     end
   end
   

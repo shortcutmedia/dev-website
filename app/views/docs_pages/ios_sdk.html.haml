@@ -1,1 +1,2 @@
-= render 'ios_readme', locals: { toc_prefix: 'ios' }
+-text = File.read(Rails.root + "app/views/docs_pages/ios_readme.md")
+= raw markdown(text)

@@ -23,7 +23,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'haml-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'markdown-rails'
+#gem 'markdown-rails'
 gem 'rouge'
 gem 'redcarpet'
 
