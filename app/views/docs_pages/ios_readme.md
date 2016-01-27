@@ -1,4 +1,6 @@
-# Shortcut Deep Linking SDK for iOS
+[ANDROID](/android_sdk) | [WINDOWS](/windows_sdk) (buttons that take the users to the SDK versions)
+
+#Shortcut Deep Linking SDK for iOS
 
 This SDK provides the following features:
 
