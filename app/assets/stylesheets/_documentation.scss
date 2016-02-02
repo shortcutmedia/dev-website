@@ -1,13 +1,28 @@
 .documentation {
-  .side-bar nav {
-    background: #f4f4f4;
-    padding: 40px 20px;
-    a:hover, a:focus {
-      color: #82d5a0;
+  .sdk_pills {
+    .nav {
+      padding-top: 0px;
+      padding-bottom: 5px;
+      padding-left: 0px;
+    }
+    .nav > li > a {
+      padding: 10px 25px;
+      color: #78d298;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #78d298;
+      
+    }
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+      color: #ffffff;
+      background-color: #78d298;
     }
 
+    .side-bar nav {
+      background: #f4f4f4;
+      padding: 40px 20px;
+    }
   }
-
 
   .main {
     border-top: 1px solid #ebebeb;

@@ -1,19 +1,20 @@
-%ul.nav.nav-pills
-  %li.active
-    = link_to "iOS", "#ios_sdk", { "data-toggle" => "tab" }
-  %li
-    = link_to "Android", "#android_sdk", { "data-toggle" => "tab" }
+.sdk_pills
+  %ul.nav.nav-pills
+    %li.active
+      = link_to "iOS", "#ios_s", { "data-toggle" => "tab" }
+    %li
+      = link_to "Android", "#android_s", { "data-toggle" => "tab" }
 
-.tab-content
-  .tab-pane.active#ios_sdk
-    -ios_doc = File.read(Rails.root + "app/views/docs_pages/ios_readme.md")
-    = raw markdown(ios_doc)
+  .tab-content
+    .tab-pane.active#ios_s
+      -text = File.read(Rails.root + "app/views/docs_pages/ios_readme.md")
+      = raw markdown(text)
 
-.tab-content
-  .tab-pane#android_sdk
-    -android_doc = File.read(Rails.root + "app/views/docs_pages/android_readme.md")
-    = raw markdown(android_doc)
+    .tab-pane#android_s
+      -text = File.read(Rails.root + "app/views/docs_pages/android_readme.md")
+      = raw markdown(text)
 
 %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
 %script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
-    
+
+
