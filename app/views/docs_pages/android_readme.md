@@ -7,9 +7,12 @@ This SDK provides the following features:
 
 There is also an [iOS version](https://github.com/shortcutmedia/shortcut-deeplink-sdk-ios) of this SDK.
 
-## Requirements
+### Requirements
 
 The SDK works with Android API 10+.
+
+### License
+This project is released under the MIT license. See included [LICENSE.txt](LICENSE.txt) file for details.
 
 ## Installation
 
@@ -226,8 +229,4 @@ dependencies {
 ### Use jcenter or mavenCentral
 
 _Support for jcenter and mavenCenteral is coming soon._
-
-## License
-This project is released under the MIT license. See included [LICENSE.txt](LICENSE.txt) file for details.
-
 
