@@ -1,25 +1,30 @@
-<h1>Technical Documentation</h1>
-<section class="blue no-bottom analytics">
-<div class="container">
-<div class="row">
-<div class="col-sm-12">
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-4">
-<h2 style="text-align:left;"><strong>Shortcut SDK</strong></h2>
-<p style="text-align:left;padding-bottom:10px;">Installing Shortcut's SDK will allow you to use most of Shortcut's features. You'll also be able to get deeper insights into your customer behaviour with Shortcut's analytics.</p>
-<p style="text-align:left;padding-bottom:20px;"><a href="/ios_sdk">GET STARTED</a><p>
-</div>
-<div class="col-sm-4">
-<h2 style="text-align:left;"><strong>App Banners</strong></h2>
-<p style="text-align:left;padding-bottom:10px;">App banners are a great way so promote your app and drive more traffic to your app. You will be able to use Shortcut's App banners after installing the code snippet.</p>
-<p style="text-align:left;padding-bottom:20px;"><a href="/app_banners_ios">GET STARTED</a><p>
-</div>
-<div class="col-sm-4">
-<h2 style="text-align:left;"><strong>Referrals</strong></h2>
-<p style="text-align:left;padding-bottom:10px;">Your users are your best sales people. The Referral code snippet will allow your users to share and recommend your app and your app content to their friends.</p>
-<p style="text-align:left;padding-bottom:20px;"><a href="/referrals_ios">GET STARTED</a><p>
-</div>
-</section>
+%h1
+  Technical Documentation
+%section.blue.no-bottom.analytics
+  .row
+    .col-sm-4
+      %h2{:style => "text-align:left;"}
+        %strong 
+          Shortcut SDK
+      %p{:style => "text-align:left;padding-bottom:10px;"}
+        Installing Shortcut's SDK will allow you to use most of Shortcut's features. You'll also be able to get deeper insights into your customer behaviour with Shortcut's analytics.
+      %p{:style => "text-align:left;padding-bottom:20px;"}
+        = link_to "GET STARTED", "/ios_sdk"
+
+    .col-sm-4
+      %h2{:style => "text-align:left;"}
+        %strong 
+          App Banners
+      %p{:style => "text-align:left;padding-bottom:10px;"}
+        App banners are a great way so promote your app and drive more traffic to your app. You will be able to use Shortcut's App banners after installing the code snippet.
+      %p{:style => "text-align:left;padding-bottom:20px;"}
+        = link_to "GET STARTED", "/app_banners_ios"
+
+    .col-sm-4
+      %h2{:style => "text-align:left;"}
+        %strong 
+          Referrals
+      %p{:style => "text-align:left;padding-bottom:10px;"}
+        Your users are your best sales people. The Referral code snippet will allow your users to share and recommend your app and your app content to their friends.
+      %p{:style => "text-align:left;padding-bottom:20px;"}
+        = link_to "GET STARTED", "/referrals_ios"

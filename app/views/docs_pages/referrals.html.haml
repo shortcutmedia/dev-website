@@ -1,0 +1,17 @@
+.sdk_pills
+  %ul.nav.nav-pills
+    %li.active
+      = link_to "iOS", "#ios_s", { "data-toggle" => "tab" }
+    %li
+      = link_to "Android", "#android_s", { "data-toggle" => "tab" }
+
+  .tab-content
+    .tab-pane.active#ios_s
+      -text = File.read(Rails.root + "app/views/docs_pages/referrals_ios_readme.md")
+      = raw markdown(text)
+      
+    .tab-pane#android_s
+      Nothing here
+      
+%script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+%script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")

@@ -20,10 +20,12 @@
 <section class='white doc'>
   <div class='container'>
     <div class='row'>
-      <div class='col-xs-12 col-md-3 side-bar'>
-        <nav class='doc-toc hidden-print'>
-        <%= render 'documentation_menu' %>
-        </nav>
+      <div class='col-xs-12 col-md-3'>
+        <div class='side-bar'>
+          <nav class='doc-toc hidden-print'>
+            <%= render 'documentation_menu' %>
+          </nav>
+        </div>
       </div>
       <div class='col-xs-12 col-md-9 main'>
         <%= yield %>

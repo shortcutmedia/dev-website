@@ -1,5 +1,3 @@
-[ANDROID](/referrals_android) | [WINDOWS](/referrals_windows) (buttons that take the users to the SDK versions)</button>
-
 # Referrals for iOS
 The best product is the one that sells itself. With referrals, you allow your users to invite others. With Shortcut you can create a seamless user flow to make your on-boarding experience as frictionless as possible.
 
