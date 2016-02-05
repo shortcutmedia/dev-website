@@ -183,7 +183,7 @@ Android already has support for deep links baked in. The Shortcut Deep Linking S
 
 In order to support deep links in your app add an intent filter to the `Activity` which you want to get opened when a short link is clicked. This is the entry point of your app. For details check out the [Android documentation](https://developers.google.com/app-indexing/android/app). The example below demonstrates how you would configure deep link support for the launcher activity in your app's `Manifest.xml`:
 
-```XML
+```xml
  <activity
       android:name=".MainActivity"
       android:label="@string/app_name" >
@@ -228,5 +228,5 @@ dependencies {
 
 ### Use jcenter or mavenCentral
 
-_Support for jcenter and mavenCenteral is coming soon._
+_Support for jcenter and mavenCentral is coming soon._
 
