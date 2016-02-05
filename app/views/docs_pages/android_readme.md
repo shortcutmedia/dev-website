@@ -12,7 +12,7 @@ There is also an [iOS version](https://github.com/shortcutmedia/shortcut-deeplin
 The SDK works with Android API 10+.
 
 ### License
-This project is released under the MIT license. See included [LICENSE.txt](LICENSE.txt) file for details.
+This project is released under the MIT license. See included [LICENSE.txt](/license.txt) file for details.
 
 ## Installation
 
