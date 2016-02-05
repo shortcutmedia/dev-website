@@ -37,7 +37,7 @@ To make use of this SDK you need the following:
 
 Make sure to import our SDK in all files where you use it:
 
-```objective-c
+```objective_c
 #import <ShortcutDeepLinkingSDK/ShortcutDeepLinkingSDK.h>
 ```
 
@@ -47,7 +47,7 @@ To enable deferred deep linking you just have to tell the SDK about the app laun
 
 Add the following to `-application:didFinishLaunchingWithOptions:` in your *AppDelegate.m* file:
 
-```objective-c
+```objective_c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     [[SCDeepLinking sharedInstance] launch];
@@ -63,7 +63,7 @@ To collect deep link interaction statistics you have to tell the SDK when a deep
 
 Add the following to `-application:openURL:sourceApplication:annotation:` (you have added this method to your app delegate when you implemented your app's normal deep link handling):
 
-```objective-c
+```objective_c
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
 
     SCSession *deepLinkSession = [[SCDeepLinking sharedInstance] startSessionWithURL:url];
@@ -80,7 +80,7 @@ Add the following to `-application:openURL:sourceApplication:annotation:` (you h
 
 Tell the SDK about your token by adding the following to `-application:didFinishLaunchingWithOptions:` in your *AppDelegate.m* file:
 
-```objective-c
+```objective_c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     [[SCDeepLinking sharedInstance] setAuthToken:@"YOUR_AUTH_TOKEN_HERE"];
@@ -99,7 +99,7 @@ Creating short links is an asynchronous process, since your link parameters need
 An implementation could look something like this:
 
 
-```objective-c
+```objective_c
 - (IBAction)shareButtonPressed:(id)button {
 
     SCDeepLinking *dl = [SCDeepLinking sharedInstance];

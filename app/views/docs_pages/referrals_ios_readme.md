@@ -18,7 +18,7 @@ In this example, we define the referral parameter `referral_from` to identify th
 Add a button to your UI and wire it to an action in a view controller (this example assumes `shareButtonPressed`). Implement the action in the following way:
 
 
-```objective-c
+```objective_c
 - (IBAction)shareButtonPressed:(id)button {
 
     NSString *title    = @"Invite from Johnny Appleseed";
@@ -47,7 +47,7 @@ Add a button to your UI and wire it to an action in a view controller (this exam
 
 When the invited user eventually installs and launches the app, the Shortcut Deep Linking SDK triggers your app delegate's `-application:openURL:sourceApplication:annotation:` method. Implement it the following way:
 
-```objective-c
+```objective_c
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
 
     SCSession *deepLinkSession = [[SCDeepLinking sharedInstance] startSessionWithURL:url];
