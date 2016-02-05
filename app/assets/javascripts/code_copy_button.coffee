@@ -1,7 +1,9 @@
 $ ->
   $('pre > code').each ->
-    copy_button = $ '<div class="btn btn-default btn-xs code-copy-button">copy</span></div>'
-    copy_button.attr 'data-code-copy-button', 'true'
+    copy_button = $ '<div class="btn btn-default btn-xs code-copy-button">Copy <span class="glyphicon glyphicon-copy"></span></div>'
+    copy_button.attr 'data-code-copy-button': 'true'
+
+    Tipped.create copy_button, 'Copy snippet to clipboard'
 
     $(this).parent().prepend copy_button
 

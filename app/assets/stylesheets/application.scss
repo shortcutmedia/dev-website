@@ -19,6 +19,7 @@ $container-lg-increase-gutter-by: 30px;
 @import "documentation";
 @import "rouge";
 
+@import "tipped"; // Bootstrap's plugin was doesn't work properly inside pre > code tags
 
 // Reset browser margin, padding. Don't know why normalize doesn't handle that?
 * {
