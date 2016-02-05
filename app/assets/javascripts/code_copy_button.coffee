@@ -1,0 +1,10 @@
+$ ->
+  $('pre > code').each ->
+    copy_button = $ '<div class="btn btn-default btn-xs code-copy-button">copy</span></div>'
+    copy_button.attr 'data-code-copy-button', 'true'
+
+    $(this).parent().prepend copy_button
+
+  new Clipboard '[data-code-copy-button]',
+    text: (button) ->
+      $(button).siblings('code')[0].textContent

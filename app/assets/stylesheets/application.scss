@@ -44,9 +44,9 @@ $container-lg-increase-gutter-by: 30px;
 
 
 html {
-  /* html's font-size is the root font-size, which means it will be used as 
-   * a base for rem calculation, but that's it, nothing else. 
-   * body's font-size is the text's default font-size: all your text should 
+  /* html's font-size is the root font-size, which means it will be used as
+   * a base for rem calculation, but that's it, nothing else.
+   * body's font-size is the text's default font-size: all your text should
    * have this size, unless overriding definition */
   font-size: $font-size-base; /* base font size for rem */
 }
@@ -92,7 +92,7 @@ p {
     color: $text-color;
     text-decoration: underline;
   }
-  
+
   a.btn {
     text-decoration: none;
   }
@@ -103,7 +103,7 @@ p {
 }
 
 .margin-b {
-  margin-bottom: 50px;  
+  margin-bottom: 50px;
 }
 
 @media (min-width: $grid-float-breakpoint) {
@@ -489,7 +489,7 @@ section.white:not(.header) + section.white {
 
   ul {
     padding-left: 20px;
-    
+
     font-weight: 300;
     @include font-size(18px);
   }
@@ -618,8 +618,8 @@ figure.fluid {
     background-size: auto 100%;
     background-clip: border-box;
 
-    @media (min-width: $grid-float-breakpoint) { 
-      display: block; 
+    @media (min-width: $grid-float-breakpoint) {
+      display: block;
       margin-right: 0;
     }
     @media (min-width: $screen-lg-min) { margin-right: auto; }
@@ -645,8 +645,8 @@ figure.fluid {
 
   @media (min-width: $grid-float-breakpoint) {
 
-    input { 
-      width: 60%; 
+    input {
+      width: 60%;
       display: inline;
     }
 
@@ -668,5 +668,20 @@ figure.fluid {
   }
 }
 
+.code-copy-button {
+  float: right;
+  opacity: 0;
+  transition: opacity 0.085s;
+  font-size: 12px;
+  color: #777;
+  padding: 6px;
+  position: relative;
+  top: -20px;
+  right: -20px;
+}
+
+pre:hover .code-copy-button {
+  opacity: 1;
+}
 
 /*@import 'panda-overwrite'*/
