@@ -38,7 +38,7 @@ If for some reason this installion method does not work for you, check out [alte
 
 ## Prerequisites
 
-To make use of this SDK you need an Android app that supports deep linking. The section below [Add deep linking support to your app](#add-deep-linking-support-to-your-app) explains how to configure your app to support deep links. Please follow the instructions first.
+To make use of this SDK you need an Android app that supports deep linking. The section [Add deep linking support to your app](#add-deep-linking-support-to-your-app) explains how to configure your app to support deep links. Please follow the instructions first.
 
 Furthermore you will need an **API key**. You can retrieve the key from the [Shortcut Manager](http://manager.shortcutmedia.com/users/api_keys).
 
@@ -108,7 +108,7 @@ In your entry Activity add the following:
 
       SCConfig config = new SCConfig("<your auth token>");
       SCDeepLinking deepLinking = SCDeepLinking.getInstance(config, this);    
-      if (savedInstanceState == null) { // You wanna probably ignore device rotation
+      if (savedInstanceState == null) { // You probably want to ignore device rotation
         deepLinking.startSession(getIntent());
       }
   }

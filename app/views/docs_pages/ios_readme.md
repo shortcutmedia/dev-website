@@ -20,7 +20,7 @@ This project is released under the MIT license. See included LICENSE.txt file fo
 
 The SDK is packaged in a .framework file. To use it within your project follow these steps:
 
-1. Download the latest SDK as zip file from the [releases page](https://github.com/shortcutmedia/shortcut-deeplink-sdk-ios/releases).
+1. Download the latest SDK as a zip file from the [releases page](https://github.com/shortcutmedia/shortcut-deeplink-sdk-ios/releases).
 2. Unzip it and add the *ShortcutDeepLinkingSDK.framework*  file to your project, e.g. by dragging it into the Project Navigator of your project in Xcode.
 3. Within your project's **Build phases** make sure that the *ShortcutDeepLinkingSDK.framework* is added in the **Link binary with libraries** section. If you don't find it there, drag it from the Project Navigator to the list.
 
@@ -59,7 +59,7 @@ Add the following to `-application:didFinishLaunchingWithOptions:` in your *AppD
 
 #### Collecting deep link interaction statistics
 
-To collect deep link interaction statistics you have to tell the SDK when a deep link is opened: The SDK keeps track of your users looking at deep link content through sessions. You have to create a session whenever a a deep link is opened; the SDK will automatically terminate the session when a user leaves your app.
+To collect deep link interaction statistics you have to tell the SDK when a deep link is opened. The SDK keeps track of your users looking at deep link content through sessions. You have to create a session whenever a deep link is opened; the SDK will automatically terminate the session when a user leaves your app.
 
 Add the following to `-application:openURL:sourceApplication:annotation:` (you have added this method to your app delegate when you implemented your app's normal deep link handling):
 
