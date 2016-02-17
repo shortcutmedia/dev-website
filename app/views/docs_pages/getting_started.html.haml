@@ -1,3 +1,9 @@
+- content_for(:title) { 'Example title' }
+
+- content_for(:meta_tags) do
+  %meta{name: 'description', content: 'Example description' }
+  %meta{name: 'og:image', content: 'http://example.com/image.jpg' }
+
 %h1 Get Started
 %p To get started, just follow these steps. You’ll be done in no time and can then enjoy all the Shortcut features. Every app is different so if you run into any difficulties along the way, please let us know.
 %h2 1. Register with Shortcut
