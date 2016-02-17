@@ -30,21 +30,11 @@ module ApplicationHelper
       Rouge::Formatters::HTML.new(opts)
     end
   end
-  
-  # Return a title on a per-page basis.
-  def title
-    base_title = "Shortcut Documentation"
-    if @title.nil?
-      base_title
-    else
-      "#{@title} · #{base_title}"
-    end
-  end
-  
+
   def svg_image_tag(src, opts={})
     src = URI.parse(src)
     logger.debug "URI.parse: #{src}"
-    
+
     src = URI.parse(asset_path src) unless src.host # prepand /images/ if relative src
 
     if src.fragment

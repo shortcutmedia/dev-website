@@ -4,18 +4,17 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><%= title %></title>
-  
-  <%= yield :head %>  
-  
+
+  <title><%= [yield(:title), 'Shortcut Documentation'].reject(&:blank?).join(' · ') %></title>
+
   <%= stylesheet_link_tag    'ars-maquette-web-font' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'favicon.png' %>
-  
+
 </head>
-	
+
   <%= render 'layouts/navbar' %>
 
   <%= yield %>
