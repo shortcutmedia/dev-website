@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title><%= [yield(:title), 'Shortcut Documentation'].reject(&:blank?).join(' · ') %></title>
+  <%= yield :meta_tags %>
 
   <%= stylesheet_link_tag    'ars-maquette-web-font' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
