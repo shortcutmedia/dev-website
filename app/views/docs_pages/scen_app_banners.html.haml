@@ -1,40 +1,52 @@
-<h1 style="text-align:left;">App Banners</h1>
-<p style="text-align:left;padding-bottom:10px;">Make your mobile website and desktop website users aware of your app and drive both traffic and download to your app. Your app is the channel best optimized for smartphone use so make sure your smartphone users use and read your content in your app instead of on your mobile website.</p>
-<section class="blue no-bottom analytics">
-<div class="container">
-<div class="row">
-<div class="col-sm-12">
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-4">
-<h3 style="text-align:center;"><strong><a href="/scen_app_banners#how_it_works">How it Works</a></strong></h3>
-</div>
-<div class="col-sm-4">
-<h3 style="text-align:center;"><strong><a href="/scen_app_banners#benefits">The Benefits You Get</a></strong></h3>
-</div>
-<div class="col-sm-4">
-<h3 style="text-align:center;"><strong><a href="/scen_app_banners#set_up">Setting It Up</a></strong></h3>
-</div>
-</section>
+- content_for(:title) { 'Mobile app banners to improve your app retention' }
 
-<h2 style="text-align:left;"><a name="how_it_works">How it works</a></h2>
-<p style="text-align:left;padding-bottom:10px;">App banners work with an additional code that you need to add to your app to make it work. When you have done this you will be able to set up app banners for both your mobile website and for your desktop version of your website. </p>
-<p>Your desktop banners have a QR code that your users can scan with their smartphones and your mobile website has a button that can be clicked to open the content in your app. The users that either scan the QR code or click on the banner on your mobile website will be sent either to the app store or directly to your in-app content depending on if they already have your app installed or not.</p>
+- content_for(:meta_tags) do
+  %meta{name: 'description', content: 'Mobile app banners to bring your website users to your app.' }
+  %meta{name: 'og:image', content: 'http://example.com/image.jpg' }
 
-
-<h2 style="text-align:left;"><a name="benefits">The benefits you get</a></h2>
-<p style="text-align:left;padding-bottom:10px;">When you use shortcut you can install the banners for iOS and Android once and you will be able to manage the banners for both systems in one place; the Shortcut Manager.</p>
-<p>You can customize the app banners that you create with Shortcut to fit your brand. Shortcut’s banner creation tool is easy to use and you will have great banners that suit your app in no time.</p>
-<p>Shortcut’s A/B testing functionality makes it possible for you to create different app banners and test them against each other. This is a great way to optimize your conversion.</p>
-
-<h2 style="text-align:left;padding-bottom:20px;"><a name="set_up">Setting up Shortcut for your App Banners</a></h2>
-<h3 style="text-align:left;padding-bottom:0px;">Technical Set up</h3>
-<h4 style="text-align:left;">1. <a href="http://manager.shortcutmedia.com/users/sign_up here">Register for Shortcut</a> if you haven’t done so already</h4>
-<h4 style="text-align:left;">2. Enable <a href="/getting_started#mobile_deep_linking">mobile deep linking</a> in your app</h4>
-<h4 style="text-align:left;padding-bottom:20px;">3. Implement <a href="/app_banners">App Banners</a> in your app</h4>
-
-<h3 style="text-align:left;">Set up Shortcut for App Banners</h3>
-<h4 style="text-align:left;">4. Go to "My Apps" and choose "App Banners"</h4>
-<h4 style="text-align:left;">5. Click "Enable"</h4>
+%h1{:style => "text-align:left;"} App Banners
+%p{:style => "text-align:left;padding-bottom:10px;"} Make your mobile website and desktop website users aware of your app and drive both traffic and download to your app. Your app is the channel best optimized for smartphone use so make sure your smartphone users use and read your content in your app instead of on your mobile website.
+%section.blue.no-bottom.analytics
+  .container
+    .row
+      .col-sm-12
+  .row
+    .col-sm-4
+      %h3{:style => "text-align:center;"}
+        %strong
+          %a{:href => "/scen_app_banners#how_it_works"} How it Works
+    .col-sm-4
+      %h3{:style => "text-align:center;"}
+        %strong
+          %a{:href => "/scen_app_banners#benefits"} The Benefits You Get
+    .col-sm-4
+      %h3{:style => "text-align:center;"}
+        %strong
+          %a{:href => "/scen_app_banners#set_up"} Setting It Up
+%h2{:style => "text-align:left;"}
+  %a{:name => "how_it_works"} How it works
+%p{:style => "text-align:left;padding-bottom:10px;"} App banners work with an additional code that you need to add to your app to make it work. When you have done this you will be able to set up app banners for both your mobile website and for your desktop version of your website.
+%p Your desktop banners have a QR code that your users can scan with their smartphones and your mobile website has a button that can be clicked to open the content in your app. The users that either scan the QR code or click on the banner on your mobile website will be sent either to the app store or directly to your in-app content depending on if they already have your app installed or not.
+%h2{:style => "text-align:left;"}
+  %a{:name => "benefits"} The benefits you get
+%p{:style => "text-align:left;padding-bottom:10px;"} When you use shortcut you can install the banners for iOS and Android once and you will be able to manage the banners for both systems in one place; the Shortcut Manager.
+%p You can customize the app banners that you create with Shortcut to fit your brand. Shortcut’s banner creation tool is easy to use and you will have great banners that suit your app in no time.
+%p Shortcut’s A/B testing functionality makes it possible for you to create different app banners and test them against each other. This is a great way to optimize your conversion.
+%h2{:style => "text-align:left;padding-bottom:20px;"}
+  %a{:name => "set_up"} Setting up Shortcut for your App Banners
+%h3{:style => "text-align:left;padding-bottom:0px;"} Technical Set up
+%h4{:style => "text-align:left;"}
+  1.
+  %a{:href => "http://manager.shortcutmedia.com/users/sign_up here"} Register for Shortcut
+  if you haven’t done so already
+%h4{:style => "text-align:left;"}
+  2. Enable
+  %a{:href => "/getting_started#mobile_deep_linking"} mobile deep linking
+  in your app
+%h4{:style => "text-align:left;padding-bottom:20px;"}
+  3. Implement
+  %a{:href => "/app_banners"} App Banners
+  in your app
+%h3{:style => "text-align:left;"} Set up Shortcut for App Banners
+%h4{:style => "text-align:left;"} 4. Go to "My Apps" and choose "App Banners"
+%h4{:style => "text-align:left;"} 5. Click "Enable"

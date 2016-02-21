@@ -1,2 +1,9 @@
+- content_for(:title) { 'App Banners' }
+
+- content_for(:meta_tags) do
+  %meta{name: 'description', content: 'Step by step instructions on how to install the Shortcut´s App Banners' }
+  %meta{name: 'og:image', content: 'http://example.com/image.jpg' }
+
+
 -text = File.read(Rails.root + "app/views/docs_pages/app_banners_readme.md")
 ~ raw markdown(text)

@@ -1,3 +1,10 @@
+- content_for(:title) { '' }
+
+- content_for(:meta_tags) do
+  %meta{name: 'description', content: 'Shortcut helps you  grow your app and increase app user retention. Try now!' }
+  %meta{name: 'og:image', content: 'http://example.com/image.jpg' }
+
+
 %h1{:style => "text-align:left;"} Overview
 %p{:style => "text-align:left;padding-bottom:0px;"} Shortcut helps you reach your growth goals rapidly and get more users and increased retention for your app. For everything from app promotion and share functions to easy-to-understand analytics we’ve got you covered.
 %section.blue.no-bottom.analytics

@@ -1,2 +1,9 @@
+- content_for(:title) { 'Shortcut API' }
+
+- content_for(:meta_tags) do
+  %meta{name: 'description', content: 'Step by step instructions on how to install the Shortcut API' }
+  %meta{name: 'og:image', content: 'http://example.com/image.jpg' }
+
+
 -text = File.read(Rails.root + "app/views/docs_pages/shortcut_api_readme.md")
 ~ raw markdown(text)

@@ -1,36 +1,52 @@
-<h1 style="text-align:left;">App User Referrals	</h1>
-<p style="text-align:left;padding-bottom:10px;">You know the feeling when you read something and you think of a friend. Maybe it’s a common joke you have or maybe you think your friend could be interested in what you are reading. Content sharing makes it simple and easy for your users to share pieces of content in your app with their friends and contacts.</p>
-<section class="blue no-bottom analytics">
-<div class="container">
-<div class="row">
-<div class="col-sm-12">
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-4">
-<h3 style="text-align:center;"><strong><a href="/scen_referrals#how_it_works">How it Works</a></strong></h3>
-</div>
-<div class="col-sm-4">
-<h3 style="text-align:center;"><strong><a href="/scen_referrals#benefits">The Benefits You Get</a></strong></h3>
-</div>
-<div class="col-sm-4">
-<h3 style="text-align:center;"><strong><a href="/scen_referrals#set_up">Setting It Up</a></strong></h3>
-</div>
-</section>
+- content_for(:title) { 'More loyal users with app referrals' }
 
-<h2 style="text-align:left;"><a name="how_it_works">How it works</a></h2>
-<p style="text-align:left;padding-bottom:10px;">When you have implemented the Referral code snippet to your app you will be able to activate the sharing function for different pieces of content in your app. The sharing function has all the sharing platforms that are being used by your users like for example, SMS, E-Mail, Facebook etc.</p>
-
-
-<h2 style="text-align:left;"><a name="benefits">The benefits you get</a></h2>
-<p style="text-align:left;padding-bottom:10px;">When one of your users shares your content, they are at the same time promoting or recommending your app to their friends. It’s a bit like a mobile word-of-mouth.</p>
-<p>Word of mouth is normally very hard to measure but with Shortcut every time someone shares your content, and thereby recommends your app to a friend, this gets recorded in the Shortcut Manager.</p>
-<p>You can see which parts of your content is shared the most. This information you can then use to optimize your app and create more of the kind of content that your users like and share with their friends.</p>
-
-<h2 style="text-align:left;padding-bottom:20px;"><a name="set_up">Setting up Shortcut for App Referrals</a></h2>
-<h3 style="text-align:left;padding-bottom:0px;">Technical Set up</h3>
-<h4 style="text-align:left;">1. <a href="http://manager.shortcutmedia.com/users/sign_up here">Register for Shortcut</a> if you haven’t done so already</h4>
-<h4 style="text-align:left;">2. Enable <a href="/getting_started#mobile_deep_linking">mobile deep linking</a> in your app</h4>
-<h4 style="text-align:left;">3. Add your app in the <a href="http://manager.shortcutmedia.com/">Shortcut Manager</a> to get your API token</h4>
-<h4 style="text-align:left;padding-bottom:20px;">4. Implement <a href="/referrals">Referrals</a> in your app</h4>
+- content_for(:meta_tags) do
+  %meta{name: 'description', content: 'App referrals enable your users to share your apps. Try now!' }
+  %meta{name: 'og:image', content: 'http://example.com/image.jpg' }
+  
+%h1{:style => "text-align:left;"} App User Referrals
+%p{:style => "text-align:left;padding-bottom:10px;"} You know the feeling when you read something and you think of a friend. Maybe it’s a common joke you have or maybe you think your friend could be interested in what you are reading. Content sharing makes it simple and easy for your users to share pieces of content in your app with their friends and contacts.
+%section.blue.no-bottom.analytics
+  .container
+    .row
+      .col-sm-12
+  .row
+    .col-sm-4
+      %h3{:style => "text-align:center;"}
+        %strong
+          %a{:href => "/scen_referrals#how_it_works"} How it Works
+    .col-sm-4
+      %h3{:style => "text-align:center;"}
+        %strong
+          %a{:href => "/scen_referrals#benefits"} The Benefits You Get
+    .col-sm-4
+      %h3{:style => "text-align:center;"}
+        %strong
+          %a{:href => "/scen_referrals#set_up"} Setting It Up
+%h2{:style => "text-align:left;"}
+  %a{:name => "how_it_works"} How it works
+%p{:style => "text-align:left;padding-bottom:10px;"} When you have implemented the Referral code snippet to your app you will be able to activate the sharing function for different pieces of content in your app. The sharing function has all the sharing platforms that are being used by your users like for example, SMS, E-Mail, Facebook etc.
+%h2{:style => "text-align:left;"}
+  %a{:name => "benefits"} The benefits you get
+%p{:style => "text-align:left;padding-bottom:10px;"} When one of your users shares your content, they are at the same time promoting or recommending your app to their friends. It’s a bit like a mobile word-of-mouth.
+%p Word of mouth is normally very hard to measure but with Shortcut every time someone shares your content, and thereby recommends your app to a friend, this gets recorded in the Shortcut Manager.
+%p You can see which parts of your content is shared the most. This information you can then use to optimize your app and create more of the kind of content that your users like and share with their friends.
+%h2{:style => "text-align:left;padding-bottom:20px;"}
+  %a{:name => "set_up"} Setting up Shortcut for App Referrals
+%h3{:style => "text-align:left;padding-bottom:0px;"} Technical Set up
+%h4{:style => "text-align:left;"}
+  1.
+  %a{:href => "http://manager.shortcutmedia.com/users/sign_up here"} Register for Shortcut
+  if you haven’t done so already
+%h4{:style => "text-align:left;"}
+  2. Enable
+  %a{:href => "/getting_started#mobile_deep_linking"} mobile deep linking
+  in your app
+%h4{:style => "text-align:left;"}
+  3. Add your app in the
+  %a{:href => "http://manager.shortcutmedia.com/"} Shortcut Manager
+  to get your API token
+%h4{:style => "text-align:left;padding-bottom:20px;"}
+  4. Implement
+  %a{:href => "/referrals"} Referrals
+  in your app
