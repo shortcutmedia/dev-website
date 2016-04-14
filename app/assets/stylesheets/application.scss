@@ -61,7 +61,7 @@ body {
      /* FIXME: test this in different browsers. */
      /*Alternative use compass background with gradient*/
     /*background: image-url($pattern-image) left top repeat;*/
-    background-image: image-url($pattern-image);
+    /* background-image: image-url($pattern-image); */
     /*background-color: $site-background-color;*/
     /*@include background(image-url($pattern-image),*/
                             /*linear-gradient(to bottom, $site-background-color, $site-background-color));*/
