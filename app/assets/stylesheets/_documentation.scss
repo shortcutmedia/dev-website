@@ -7,15 +7,15 @@
     }
     .nav > li > a {
       padding: 10px 25px;
-      color: #78d298;
+      color: $dark-purple;
       border-style: solid;
       border-width: 1px;
-      border-color: #78d298;
+      border-color: $dark-purple;
 
     }
     .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
       color: #ffffff;
-      background-color: #78d298;
+      background-color: $dark-purple;
     }
   }
   .side-bar {
@@ -85,7 +85,7 @@
 
 
     a {
-      color: #82d5a0;
+      color: $dark-purple;
       text-decoration: none;
       font-weight: 500;
     }
