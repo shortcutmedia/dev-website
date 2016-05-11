@@ -1,22 +1,15 @@
 # Referrals for Android
-The best product is the one that sells itself. With referrals, you allow your users to invite others. 
-With Shortcut you can create a seamless user flow to make your on-boarding experience as frictionless as possible.
+The best product is the one that sells itself. With referrals, you allow your users to invite others. With Shortcut you can create a seamless user flow to make your on-boarding experience as frictionless as possible.
 
 ##Requirements
 
 The SDK works with Android API 10+.
 
-In order to make referrals work, you need to add our [Shortcut SDK for Android](https://developer.shortcut.sc/shortcut_sdk) 
-to your app. 
+In order to make referrals work, you need to add our [Shortcut SDK for Android](https://developer.shortcut.sc/shortcut_sdk)to your app. 
 
 ##How it works
 
-Your existing user Johnny Appleseed with the user name `j_appleseed` wants to invite his friend John Doe 
-to use your app. He clicks a button/menu item within your app which triggers the creation of a Shortcut 
-and creates a new share intent with the Shortcut. A share action is then displayed to allow Johnny to 
-send the Shortcut to his friend. When the friend clicks the Shortcut he is taken to the Google PlayStore 
-and when he opens the app, he is greeted by a customized welcome message from Johnny Appleseed containing 
-e.g. a special offer or bonus points.
+Your existing user Johnny Appleseed with the user name `j_appleseed` wants to invite his friend John Doe to use your app. He clicks a button/menu item within your app which triggers the creation of a Shortcut and creates a new share intent with the Shortcut. A share action is then displayed to allow Johnny to send the Shortcut to his friend. When the friend clicks the Shortcut he is taken to the Google PlayStore and when he opens the app, he is greeted by a customized welcome message from Johnny Appleseed containing e.g. a special offer or bonus points.
 
 ##Implementation
 
