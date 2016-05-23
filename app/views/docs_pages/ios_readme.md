@@ -31,12 +31,12 @@ You can install the SDK either using *CocoaPods* or by integrating it as a *.fra
 
 To make use of this SDK you need the following:
 
-- An API key. Use the [Shortcut Manager](http://manager.shortcutmedia.com/mobile_apps) to create a mobile app with an associated API key.
+- An API key. Use the [Shortcut Manager](http://manager.shortcut.sc/mobile_apps) to create a mobile app with an associated API key.
 
 For the deep linking features you need in addition:
 
 - An iOS app that supports deep linking (using a [custom URL scheme](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10) or [Universal Links](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html)).
-- A Shortcut with a mobile deep link to your app. Use the [Shortcut Manager](http://manager.shortcutmedia.com) to create one.
+- A Shortcut with a mobile deep link to your app. Use the [Shortcut Manager](http://manager.shortcut.sc) to create one.
 
 ## Integration into your app
 
@@ -48,7 +48,7 @@ Make sure to import our SDK in all files where you use it:
 #import <Shortcut/Shortcut.h>
 ```
 
-Use the [Shortcut Manager](http://manager.shortcutmedia.com/mobile_apps) to create a mobile app with an associated API key. Then launch the SDK with your API key's auth token by adding the following to `-application:didFinishLaunchingWithOptions:` in your *AppDelegate.m* file:
+Use the [Shortcut Manager](http://manager.shortcut.sc/mobile_apps) to create a mobile app with an associated API key. Then launch the SDK with your API key's auth token by adding the following to `-application:didFinishLaunchingWithOptions:` in your *AppDelegate.m* file:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

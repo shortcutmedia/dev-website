@@ -38,7 +38,7 @@ If for some reason this installion method does not work, check out [alternative 
 
 To make use of this SDK you need the following:
 
-- An API key. Use the [Shortcut Manager](http://manager.shortcutmedia.com/mobile_apps) to create a mobile app with an associated API key.
+- An API key. Use the [Shortcut Manager](http://manager.shortcut.sc/mobile_apps) to create a mobile app with an associated API key.
 
 For the deep linking features you need in addition:
 
@@ -237,7 +237,7 @@ config.setBaseUrl("http://short.com");
 
 ### What's next?
 
-Use the [Shortcut Manager](http://manager.shortcutmedia.com) to create a short-url and set up a deep link to your app specified.
+Use the [Shortcut Manager](http://manager.shortcut.sc) to create a short-url and set up a deep link to your app specified.
 
 ## Add deep linking support to your app
 
