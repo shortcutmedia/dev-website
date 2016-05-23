@@ -2,6 +2,16 @@
 
 - content_for(:meta_tags) do
   %meta{name: 'description', content: 'Step by step instructions on how to install the Shortcut´s App Banners' }
+  %meta{name: 'fb:app_id', content: '176995982338808'}
+  %meta{name: 'og:title', content: 'Get app users who stay.'}
+  %meta{name: 'og:url', content: 'https://shortcut.sc'}
+  %meta{name: 'og:site_name', content: 'Shortcut - The growth machine for your app'}
+  %meta{name: 'og:description', content: 'Turn your app into a powerful growth machine with high user retention and organic growth.'}
+  %meta{name: 'og:type', content: 'website'}
+  %meta{name: 'og:image', content: image_path('shortcut-growth-engine-for-app-meta.png')}
+  %meta{name: 'og:image:type', content: 'image/png'}
+  %meta{name: 'og:image:width', content: '1200'}
+  %meta{name: 'og:image:height', content: '630'}
 
 -text = File.read(Rails.root + "app/views/docs_pages/app_banners_readme.md")
 ~ raw markdown(text)
