@@ -10,7 +10,7 @@ To use the Short Link API you need an API key with an authentication token. You 
 
 You create Shortcuts by submitting the required data (title, website URL and optional mobile deep linking data) to
 
-`https://shortcut-service.shortcut.sc/api/v1/short_link/create`.
+`https://shortcut-service.shortcutmedia.com/api/v1/short_link/create`.
 
 Here is an example using `curl`:
 
@@ -21,7 +21,7 @@ curl -d "auth_token=XXX"                                          \
      -d "ios_deep_link=myapp://some/ios/path"                     \
      -d "android_deep_link=myapp://some/android/path"             \
      -d "windows_phone_deep_link=myapp://some/windows_phone/path" \
-     https://shortcut-service.shortcut.sc/api/v1/short_link/create
+     https://shortcut-service.shortcutmedia.com/api/v1/short_link/create
 ```
 
 Replace `XXX` with your token (see [Prerequisites](#prerequisites)) and all data fields with your data.
@@ -70,7 +70,7 @@ If you do not provide a `title` or deep link data (`ios_deep_link`, `android_dee
 
 ##### API endpoint:
 
-`https://shortcut-service.shortcut.sc/api/v1/short_link/create`
+`https://shortcut-service.shortcutmedia.com/api/v1/short_link/create`
 
 Submit a `POST` request to the endpoint and include your input data in the request body. Use either form encoding (`application/x-www-form-urlencoded` or `multipart/form-data`) or JSON (`application/json`) to encode your input data.
 
