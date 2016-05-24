@@ -6,7 +6,7 @@ To integrate the app banner on your website you have to integrate the following 
 
 ```java
 <script>
-  document.write('<scr'+'ipt src="https://shortcut-service.shortcut.sc/assets/app_banner.js"></scr'+'ipt>');
+  document.write('<scr'+'ipt src="https://shortcut-service.shortcutmedia.com/assets/app_banner.js"></scr'+'ipt>');
   window.addEventListener('load', function() {
     ShortcutAppBanner.setup({
 
@@ -26,7 +26,7 @@ If you have different deep links for different platforms, then you can specify t
 
 ```java
 <script>
-  document.write('<scr'+'ipt src="https://shortcut-service.shortcut.sc/assets/app_banner.js"></scr'+'ipt>');
+  document.write('<scr'+'ipt src="https://shortcut-service.shortcutmedia.com/assets/app_banner.js"></scr'+'ipt>');
   window.addEventListener('load', function() {
     ShortcutAppBanner.setup({
 
