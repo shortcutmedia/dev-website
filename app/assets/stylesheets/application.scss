@@ -50,6 +50,7 @@ html {
    * body's font-size is the text's default font-size: all your text should
    * have this size, unless overriding definition */
   font-size: $font-size-base; /* base font size for rem */
+  overflow-x: hidden;
 }
 
 body {

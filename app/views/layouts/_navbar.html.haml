@@ -1,0 +1,11 @@
+%header.SiteHeader
+  %a.brand{href: 'https://shortcut.sc/'}= svg_image_tag 'sprite.svg#shortcut-logo'
+
+  %nav.site-menu
+    %ul.u-inline-list
+      %li= link_to 'Features', 'https://shortcut.sc/features.html', class: 'sneaky'
+      %li= link_to 'Documentation', root_path, class: 'sneaky'
+
+  .session-buttons
+    = link_to 'Log in',  'https://manager.shortcut.sc/users/sign_in', class: 'button'
+    = link_to 'Sign up', 'https://manager.shortcut.sc/users/sign_up', class: 'green button'
